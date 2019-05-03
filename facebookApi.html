@@ -25,13 +25,14 @@ var table = $('#ads_table').DataTable( {
     dataType: "json",
     url: "https://graph.facebook.com/v3.2/ads_archive",
     data: function(d){
-    d.ad_reached_countries=['UA'],
+    d.ad_reached_countries=['US'],
     d.search_terms= term,
     d.ad_type="POLITICAL_AND_ISSUE_ADS",
     d.ad_active_status="ALL",
     d.limit=10000,
     d.fields='spend,currency,funding_entity,ad_delivery_start_time,ad_snapshot_url',
-    d.access_token= "EAAFYGs5Ae8IBAEvhrrggbcJSvANIZCbi6SK4RV6wJADXidfWYEoJPtpJJ0M6DZCAyyYXLSsru4euzrJVRArUT6ZAJ00b3Mrq7LRkguAG4y5vUFNFGCgmHZAlZCkNLFoKlMDjzZASIPANC5BEMTYTidIZAu9Q4FAFZAs3cypTGQGcZB4ZBNv3CuHZChY"
+    d.access_token = "EAAAAUaZA8jlABAKv7IqExF9tTQhnQeUUJX5DZBSWcs6lTV8OYR2ZCIiqqP96R9WNzCh6eQAKZBDhN4oStxqXTpVNIlOJa88sQSbFcAhKC0ZATENg3ZAdCHW2BuOS7bxEbe23od7wyB7nXPTiWsZACk3ZClTRSJ9mLC7PpUIKNOBzsgZDZD"
+   // d.access_token= "EAAFYGs5Ae8IBAEvhrrggbcJSvANIZCbi6SK4RV6wJADXidfWYEoJPtpJJ0M6DZCAyyYXLSsru4euzrJVRArUT6ZAJ00b3Mrq7LRkguAG4y5vUFNFGCgmHZAlZCkNLFoKlMDjzZASIPANC5BEMTYTidIZAu9Q4FAFZAs3cypTGQGcZB4ZBNv3CuHZChY"
     }
  },
  "columnDefs": [
