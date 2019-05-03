@@ -25,7 +25,7 @@ var table = $('#ads_table').DataTable( {
     dataType: "json",
     url: "https://graph.facebook.com/v3.2/ads_archive",
     data: function(d){
-    d.ad_reached_countries=['UA'],
+    d.ad_reached_countries=['US'],
     d.search_terms= term,
     d.ad_type="POLITICAL_AND_ISSUE_ADS",
     d.ad_active_status="ALL",
